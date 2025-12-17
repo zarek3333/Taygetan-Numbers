@@ -43,7 +43,7 @@ section,
 .typeface-name,
 .typeface-glyphs,
 .typeface-link {
-  display: grid;
+  display: inline-block;
   padding: var(--padding);
   grid-gap: var(--grid-gap);
   box-sizing: border-box;
@@ -57,6 +57,19 @@ header {
   grid-auto-flow: column;
   align-items: center;
   position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header h1, header h2, h3, controls {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(100vw - 260px);
+    position: relative;
 }
 .n {
   font-family: "Taygetean Numerals";
@@ -76,15 +89,14 @@ button {
     margin-right: -16px;
 }
 .clockwrapper {
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end;
     align-items: center;
-    width: auto;
+    width: 50vw;
     max-width: 200px;
+    min-width: 200px;
     height: 80px;
     flex-wrap: wrap;
-    position: absolute;
-    right: 10px;
     overflow-x: hidden;
 }
 p {
@@ -99,9 +111,32 @@ article header {
   color: inherit;
   padding: 0;
 }
+content, article, section, p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 100vw;
+}
 .typeface {
   padding: 0;
   margin-bottom: var(--padding);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+canvas#myCanvas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(100% - 20px);
+    max-width: 780px;
+    min-width: 320px;
 }
 .typeface-name {
   padding: 0;
