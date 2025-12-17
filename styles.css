@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,700;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @font-face {
     font-family: 'taygetean_numeralsregular';
-    src: url('fonts/taygeteannumerals-webfont.eot');
-    src: url('fonts/taygeteannumerals-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/taygeteannumerals-webfont.woff2') format('woff2'),
-         url('fonts/taygeteannumerals-webfont.woff') format('woff'),
-         url('fonts/taygeteannumerals-webfont.ttf') format('truetype'),
-         url('fonts/taygeteannumerals-webfont.svg#taygetean_numeralsregular') format('svg');
+    src: url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumerals-webfont.eot');
+    src: url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumerals-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumerals-webfont.woff2') format('woff2'),
+         url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumerals-webfont.woff') format('woff'),
+         url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumerals-webfont.ttf') format('truetype'),
+         url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumerals-webfont.svg#taygetean_numeralsregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'taygetean_numerals_slimRg';
-    src: url('fonts/taygeteannumeralsslim-webfont.eot');
-    src: url('fonts/taygeteannumeralsslim-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/taygeteannumeralsslim-webfont.woff2') format('woff2'),
-         url('fonts/taygeteannumeralsslim-webfont.woff') format('woff'),
-         url('fonts/taygeteannumeralsslim-webfont.ttf') format('truetype'),
-         url('fonts/taygeteannumeralsslim-webfont.svg#taygetean_numerals_slimRg') format('svg');
+    src: url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumeralsslim-webfont.eot');
+    src: url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumeralsslim-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumeralsslim-webfont.woff2') format('woff2'),
+         url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumeralsslim-webfont.woff') format('woff'),
+         url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumeralsslim-webfont.ttf') format('truetype'),
+         url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygeteannumeralsslim-webfont.svg#taygetean_numerals_slimRg') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -56,6 +56,7 @@ header {
   color: whitesmoke;
   grid-auto-flow: column;
   align-items: center;
+  position: relative;
 }
 .n {
   font-family: "Taygetean Numerals";
