@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Canvas Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <app id="app">
+      <header>
+        <h1>Taygetean Numbers</h1>
+        <div class="clockwrapper">
+          <canvas
+            id="myClock"
+            width="200"
+            height="36"
+            style=""
+          >
+          </canvas>
+          <canvas
+            id="myDigital"
+            width="150"
+            height="36"
+            style=""
+          >
+          </canvas>
+        </div>
+      </header>
+      <content>
+        <article>
+          <header>
+            <h2>Taygetean Numbers Typeface</h2>
+          </header>
+          <section>
+            <p>
+              Having watched the video
+              <a
+                href="https://youtu.be/EWlBno92CFg?list=PLE_kWXZhJBbQqXsz5Bxq9GXB2vnimdBOo&t=1009"
+                trget="_blank"
+                >Free Energy (Zero Point) and Base 12 Extraterrestrial
+                Mathematics - Information from Outside Earth</a
+              >
+              , I was inspired to create a typeface for Tygetean numerals and
+              related symbols. From the video symbols for numerals
+              1,2,3,4,5,6,7,8,9,10,11,12,'+' and '-' are covered. So I created 2
+              variations for the Typeface: <b>Taygetean Numerals</b> and
+              <b>Taygetean Numerals Slim</b>
+            </p>
+            <p>
+              These fonts are provided under
+              <a href="https://creativecommons.org/licenses/by/3.0/"
+                >Creative Commons Licence</a
+              >
+            </p>
+            <p>
+              <a href="https://codesandbox.io/p/sandbox/lvsd2z?file=%2Fsrc%2Findex.html" target="_blank">Code Creation Attribution: Fractal Loop</a>
+            </p>
+
+            <br />
+            <span class="typeface">
+              <span class="typeface-name">Taygetean Numerals</span>
+              <canvas
+                class="typeface-glyphs"
+                id="typeface1"
+                width="696"
+                height="108"
+                style="border: 1px solid #666;"
+              ></canvas>
+              <a
+                href="https://fontstruct.com/fontstructions/show/2349859/taygetean-numerals"
+                target="_blank"
+                class="typeface-link"
+                >get font</a
+              >
+            </span>
+            <br />
+            <span class="typeface">
+              <span class="typeface-name">Taygetean Numerals Slim</span>
+              <canvas
+                class="typeface-glyphs"
+                id="typeface2"
+                width="696"
+                height="108"
+                style="border: 1px solid #666;"
+              ></canvas>
+              <a
+                href="https://fontstruct.com/fontstructions/show/2349864/taygetean-numerals-slim"
+                target="_blank"
+                class="typeface-link"
+                >get font</a
+              >
+            </span>
+            <p>
+              I used an online service
+              <a
+                href="https://transfonter.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Transfonter</a
+              >
+              to convert the desktop font version to a web version
+            </p>
+            <br />
+            <p>
+              You can support me and my work @ ETH Address:
+              <span style="color: blue;"
+                >0x33d97816cdf3ffebe8ff6e9d61ade61c93f82e55</span
+              >
+            </p>
+          </section>
+        </article>
+        <hr />
+        <h3>Taygetean Number Grid 1 to 144</h3>
+        <canvas
+          id="myCanvas"
+          width="780"
+          height="780"
+          style="border: 1px solid #000000;"
+        >
+        </canvas>
+        <controls>
+          <button id="download">Download</button>
+          <button id="refresh">Refresh</button>
+        </controls>
+      </content>
+      <footer></footer>
+    </app>
+
+    <script src="./app.js" type="module"></script>
+    <script src="./typeface.js" type="module"></script>
+    <script src="./clock.js" type="module"></script>
+  </body>
+</html>
