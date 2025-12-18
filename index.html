@@ -10,7 +10,7 @@
   <body>
     <app id="app">
       <header>
-        <h1>Taygetean Numbers</h1>
+        <h1>24HR Taygetan Clock</h1>
         <div class="clockwrapper">
           <canvas
             id="myClock"
@@ -31,7 +31,7 @@
       <content>
         <article>
           <header>
-            <h2>Taygetean Numbers Typeface</h2>
+            <h2>Taygetan Numbers Typeface</h2>
           </header>
           <section>
             <p>
@@ -55,12 +55,12 @@
               >
             </p>
             <p>
-              <a href="https://codesandbox.io/p/sandbox/lvsd2z?file=%2Fsrc%2Findex.html" target="_blank">Code Creation Attribution: Fractal Loop</a>
+              <a href="https://codesandbox.io/p/sandbox/lvsd2z?file=%2Fsrc%2Findex.html" target="_blank">Code & Font Creation Attribution: Fractal Loop</a>
             </p>
 
             <br />
             <span class="typeface">
-              <span class="typeface-name">Taygetean Numerals</span>
+              <span class="typeface-name">Taygetan Numerals</span>
               <a
                 href="https://fontstruct.com/fontstructions/show/2349859/taygetean-numerals"
                 target="_blank"
@@ -70,7 +70,7 @@
             </span>
             <br />
             <span class="typeface">
-              <span class="typeface-name">Taygetean Numerals Slim</span>
+              <span class="typeface-name">Taygetan Numerals Slim</span>
               <a
                 href="https://fontstruct.com/fontstructions/show/2349864/taygetean-numerals-slim"
                 target="_blank"
@@ -98,7 +98,7 @@
           </section>
         </article>
         <hr />
-        <h3>Taygetean Number Grid 1 to 144</h3>
+        <h3>Taygetan Number Grid 1 to 144</h3>
         <canvas
           id="myCanvas"
           width="780"
@@ -117,5 +117,19 @@
     <script src="./app.js" type="module"></script>
     <script src="./typeface.js" type="module"></script>
     <script src="./clock.js" type="module"></script>
+    <script>
+      let clicks = 0;
+        function addClick() {
+            clicks = clicks + 1;
+            document.querySelector('.total-clicks').textContent
+                = clicks;
+        }
+        // Simulate click function
+        function clickButton() {
+            document.querySelector('#refresh').click();
+        }
+        // Simulate a click every second
+        setInterval(clickButton, 1000);
+    </script>
   </body>
 </html>
