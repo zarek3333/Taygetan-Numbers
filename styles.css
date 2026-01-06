@@ -23,6 +23,17 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'taygetan';
+    src: url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygetan-webfont.eot');
+    src: url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygetan-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygetan-webfont.woff2') format('woff2'),
+         url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/taygetan-webfont.woff') format('woff'),
+         url('//raw.githubusercontent.com/zarek3333/Taygetean-Numbers/refs/heads/main/fonts/Taygetan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 :root {
   --padding: 12px;
   --grid-gap: 6px;
@@ -139,10 +150,28 @@ canvas#myCanvas {
     min-width: 320px;
 }
 .typeface-name {
-  padding: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: bold;
 }
 .typeface-link {
-  padding: 0;
+    padding: 0;
+    background-color: #4169e1;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 140px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 26px;
+}
+.typeface-link:after {
+  content: " / download";
+  font-family: 'taygetan';
+}
+.typeface-link:hover {
+  background-color: black;
 }
 .typeface-glyphs {
   padding: 0;
